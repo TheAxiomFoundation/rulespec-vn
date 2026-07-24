@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-07-24",
+  "jurisdiction": "vn",
+  "focus": "Vietnamese tax-benefit surface: seven-band PIT, social insurance contributions, VAT and special sales tax, the environmental protection tax on fuels, and social assistance under Decree 20/2021 as amended.",
+  "purpose": "Household-level comparison-oracle and supporting-source references for Viet Nam Axiom coverage. None of these are legal authority.",
+  "oracle_scope": "A RuleSpec oracle must be an executable, pinned external calculator that accepts household-level inputs and returns household-level tax-benefit outputs comparable to Axiom outputs. Aggregate simulators, distributional reports, parameter documentation, and public model summaries are supporting references only, not oracles.",
+  "oracles": [
+    {
+      "id": "vnmod",
+      "name": "VNMOD",
+      "url": "https://www.wider.unu.edu/project/southmod-simulating-tax-and-benefit-policies-development",
+      "local_path": "~/.axiom/oracles/southmod/bundle/ (licensed, non-redistributable; never committed)",
+      "commit": null,
+      "model": "VNMOD v3.5 (SOUTHMOD; EUROMOD platform)",
+      "dataset": "VHLSS-based input microdata (shipped with the licensed bundle where included)",
+      "role": "Household-level tax-benefit comparison oracle for Viet Nam. Policy years 2013-24. Report CR-VNMOD-v3.5 (UNU-WIDER).",
+      "coverage": [
+        "personal_income_tax",
+        "social_insurance_contributions",
+        "vat",
+        "special_sales_tax",
+        "environmental_protection_tax",
+        "fuel_subsidies",
+        "social_assistance_decree_20",
+        "household_disposable_income"
+      ],
+      "authority": "wiring_pending",
+      "availability_check": {
+        "checked_at": "2026-07-24",
+        "status": "wiring_pending",
+        "detail": "The locally held licensed SOUTHMOD bundle (EUROMOD runtime proven on the Ghana and Rwanda lanes) must be inventoried for VNMOD VN systems before wiring. Validation frame: VNMOD v3.5, policy years 2013-24."
+      },
+      "bundle_sha256": null
+    }
+  ]
+}
