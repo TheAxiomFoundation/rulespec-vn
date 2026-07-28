@@ -23,3 +23,11 @@ Policy must come from the furthest upstream available source: the Government off
 ## Parity program
 
 Tracked on issue #1: tranche-2 captures (PIT amendment Luat 26/2012/QH13 + deduction Resolution 954/2020/UBTVQH14; VAT amendment 31/2013/QH13 + the 2022-24 8-percent reduction resolutions; EPT schedule Resolutions 579/2018 etc.; SST Luat 27/2008/QH12; Decree 136/2013 predecessor amounts; COVID-19 support instruments) and VNMOD parity tests per instrument.
+
+## Listing gates
+
+This repo carries `app_visibility = "experimental"` in `.axiom/registry.toml` and stays out of app surfaces until:
+
+1. The encoded surface covers the flagship calculation (personal income tax gross-to-net for a formal employee) end to end with companion tests.
+2. Oracle parity suites exist and pass against VNMOD for the encoded surface.
+3. Citation paths are stable (instrument-number form, Luat 04/2007/QH12 style, against the Cong Bao and vanban.chinhphu.vn official prints).
